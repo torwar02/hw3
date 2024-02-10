@@ -1,0 +1,23 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<title>{% block title %}{% endblock %} - Homework 3 Website</title>
+<nav>
+    <h1>Welcome to UCLA Students and Friends! <br>
+        Please see #rules-and-info to get started.
+    </h1>
+  <ul>
+    <li><a href="{{ url_for('submit') }}">Post Messages</a></li>
+    <li><a href="{{ url_for('view') }}">View Messages</a></li>
+  </ul>
+</nav>
+
+<img src = "https://cdn.discordapp.com/attachments/1186502778600820746/1204873997150453860/ChannelsSidebar.png?ex=65d6515a&is=65c3dc5a&hm=b906d75f0192467f2062c75eb343ba78f629fd8593afa5c781f067bc947f5514&" height = "800" width = "250" style="position:fixed; top:0px;  left:0px">
+    
+<img src = "https://cdn.discordapp.com/attachments/1186502778600820746/1204873997460971582/UsersSiderbar.png?ex=65d6515a&is=65c3dc5a&hm=f1282537c4f4f000be28a42e583e212f1763294cfde93973c80297b84824a535&" height = "800" width = "250" style="position:fixed; top:0px;  right:0px">
+
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% block content %}{% endblock %}
+</section>

@@ -1,0 +1,55 @@
+html {
+    font-family: Verdana;
+    background: #121b18;
+}
+
+body {
+    color: #81888e;
+    max-width: 900px;
+    margin-left: 350px;
+}
+
+h4 {
+    color: #89cff0;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+h1 {
+    color: #81888e;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+p {
+    color: #ffffff;
+    margin: 1rem 0;
+    text-align: left;
+    
+}
+
+label {
+    color: #81888e;
+}
+
+a {
+    color: CornflowerBlue;
+}
+
+
+nav ul  {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+}
+
+
+
+
+

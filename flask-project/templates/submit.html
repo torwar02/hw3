@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<img src ="https://cdn.discordapp.com/attachments/360940494240350209/1204479028057215056/discordchatting.png?ex=65d4e182&is=65c26c82&hm=922db462e88ad85c31db7b07af6a11855da471687480209a70b96cf82fd57720&">
+  <form method="post">
+      <label for="handle">What's your handle?</label>
+      <input name="handle" id="handle">
+      <label for="message">Message #general...</label>
+      <input type = "text" name="message" id="message">
+      <input type="submit" value="Send Message">
+  </form>
+  {% if sec == True %}
+  <br>
+      <b>Message sent</b>
+  {% endif %}
+{% endblock %}
+
+
